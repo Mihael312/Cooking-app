@@ -6,7 +6,7 @@ body {
 }
 
 #foodList {
-    margin: 60px;
+    margin: 30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -24,7 +24,7 @@ body {
 
 h1 {
     text-align: center;
-    padding: 30px;
+    padding: 20px;
 }
 
 form {
@@ -44,4 +44,24 @@ form {
 p{
     font-size: 20px;
     font-weight: bold;
+}
+@media (max-width: 768px) {
+    #foodList {
+        margin: 10px;
+    }
+
+    .meal-item {
+        flex: 0 1 calc(50% - 10px); /* Display 2 images in a row on smaller screens */
+    }
+
+    h1 {
+        padding: 10px;
+    }
+
+    form {
+        flex-direction: column;
+        margin: 10px 0;
+        padding: 10px;
+        text-align: center;
+    }
 }
