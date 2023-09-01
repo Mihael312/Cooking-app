@@ -1,0 +1,49 @@
+body {
+    background: linear-gradient(to bottom, orange, rgb(168, 9, 171));
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Ensure the gradient covers the entire viewport height */
+}
+
+#foodList {
+    margin: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.meal-item {
+    flex: 0 1 calc(33% - 10px);
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.meal-image {
+    max-width: 100%;
+}
+
+h1 {
+    text-align: center;
+    padding: 30px;
+}
+
+form {
+    display: flex;
+    align-items: center; 
+    margin-left: 60px; 
+}
+
+
+#searchInput {
+    min-width: 300px;
+    flex: 1; 
+    max-width: 500px;
+}
+
+#searchButton {
+    margin-left: 10px;
+}
+p{
+    font-size: 20px;
+    font-weight: bold;
+}
