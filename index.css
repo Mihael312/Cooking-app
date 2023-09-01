@@ -35,7 +35,7 @@ form {
 
 
 #searchInput {
-    min-width: 300px;
+    min-width: 100px;
     flex: 1; 
     max-width: 500px;
 }
