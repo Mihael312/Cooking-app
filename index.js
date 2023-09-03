@@ -4,6 +4,11 @@ const foodList = document.getElementById("foodList");
 const randomMeal = document.getElementById("random-meal")
 let searchQuery =""
 
+window.addEventListener("load", function () {
+    fetchAndDisplayRandomMeals();
+});
+
+
 searchButton.addEventListener("click", function (event) {
     event.preventDefault();
      searchQuery = searchInput.value.trim();
@@ -75,7 +80,3 @@ function fetchAndDisplayRandomMeals() {
             console.error("Error fetching data:", error);
         });
 }
-
-window.addEventListener("load", function () {
-    fetchAndDisplayRandomMeals();
-});
