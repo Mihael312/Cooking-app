@@ -21,6 +21,14 @@ body {
 .meal-image {
     max-width: 100%;
 }
+.meal-image:hover{
+    transform: scale(1.02);
+    border-radius: 12px;
+    opacity: 60%;
+    size: 40px;
+    cursor: pointer;
+    
+}
 
 h1 {
     text-align: center;
